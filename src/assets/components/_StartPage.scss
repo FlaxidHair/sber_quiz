@@ -1,0 +1,53 @@
+@import '../utils/variables';
+
+.main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  min-height: calc(100vh - 270px);
+  margin-top: 180px;
+
+  @media (max-width: 1600px) {
+    margin-top: 100px;
+  }
+
+  &-title__title {
+    margin-bottom: 24px;
+    height: 68px;
+  }
+
+  &-title {
+    height: 200px;
+    margin-bottom: 45px;
+  }
+  &-title__subtitle {
+    font-size: 36px;
+    text-align: center;
+    line-height: 43.2px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &-images {
+    margin-bottom: 20px;
+  }
+
+  &-button-start {
+    width: 25rem;
+    height: 5.5rem;
+    border-radius: 92.5px;
+    font-size: 36px;
+    border: none;
+    outline: none;
+    color: $button-text-color;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  &-button-start:hover {
+    background-color: #f4f4f4;
+  }
+  &-button-start:active {
+    background-color: #f4f4f4;
+  }
+}

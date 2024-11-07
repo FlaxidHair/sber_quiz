@@ -1,20 +1,30 @@
-<script setup>
-import Questions from '@/api/Questions.json'
-</script>
+<script setup></script>
 
 <template>
-  <div class="container">
-    <div class="main">
-      <h1 class="main-title__title">МЕГАМАРКЕТ</h1>
-      {{}}
+  <div class="wrapper">
+    <div class="container">
+      <router-view></router-view>
     </div>
+    <footer class="footer">
+      <p class="footer__title">Подготовлено совместно с брендом</p>
+      <p class="footer__subtitle"><img src="/konda.svg" alt="Konda" />Konda</p>
+    </footer>
   </div>
 </template>
 
-<style scoped lang="scss">
-.container {
-  background-color: #8654cc;
-  height: 100vh;
-  width: 100vw;
+<style lang="scss">
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .container {
+    flex: 1;
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
 }
 </style>
