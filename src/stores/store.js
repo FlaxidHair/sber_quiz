@@ -1,12 +1,9 @@
 // import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import { ref } from 'vue'
 
 export const useStore = defineStore('store', () => {
- 
 
-
-
-  const answerCouts = [0,0,0]
-
-  return { answerCouts }
+  const answers = ref([])
+  return {answers}
 })

@@ -5,9 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-bottom: 2vh;
   &__title {
-    font-size: 34px;
     color: #fee2c6;
   }
   .game {
@@ -16,19 +15,14 @@
     align-items: center;
 
     &__index {
-      font-size: 92px;
-      line-height: 128.8px;
       text-align: center;
       color: $button-color;
     }
 
     &__quiestion {
-      font-size: 68px;
-      line-height: 95.2px;
       text-transform: uppercase;
       text-align: center;
       text-wrap: wrap;
-      width: 70%;
     }
 
     &__cards {
@@ -46,10 +40,6 @@
         &__text {
           color: $button-text-color;
         }
-      }
-
-      .card:hover {
-        background-color: $white;
       }
     }
 
@@ -93,15 +83,16 @@
         transition: 0.5s all;
       }
 
+      &__next:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
       &__next:hover {
         background-color: $white;
       }
     }
   }
-}
-
-.active {
-  opacity: 1;
 }
 
 @media (max-width: 3840px) {
@@ -121,7 +112,7 @@
       &__quiestion {
         font-size: 68px;
         line-height: 95.2px;
-        width: 70%;
+        width: 90%;
         margin-bottom: 70px;
       }
 
@@ -260,7 +251,7 @@
   .quiz {
     &__title {
       font-size: 22px;
-      margin-top: 44px;
+      margin-top: 40px;
     }
 
     .game {
@@ -275,7 +266,8 @@
         font-size: 36px;
         line-height: 50.4px;
         width: 70%;
-        margin-bottom: 42px;
+        margin-bottom: 2px;
+        height: 108px;
       }
 
       &__cards {
@@ -339,7 +331,7 @@
       margin-top: 55px;
     }
     .game {
-      margin-top: 200px;
+      margin-top: 50px;
 
       &__index {
         font-size: 48px;
@@ -349,8 +341,9 @@
       &__quiestion {
         font-size: 24px;
         line-height: 33.6px;
-        width: 70%;
+        width: 90%;
         margin-bottom: 36px;
+        height: 56px;
       }
 
       &__cards {
@@ -488,3 +481,11 @@
     }
   }
 }
+.active-item {
+  opacity: 1 !important;
+}
+
+.pick-item {
+  background-color: $white !important;
+}
+
