@@ -23,26 +23,4 @@
     flex: 1;
   }
 }
-
-//   .footer {
-//     text-align: center;
-//     display: flex;
-//     flex-direction: column;
-//     row-gap: 15px;
-//     padding-bottom: 30px;
-
-//     &__title {
-//       font-size: 0.83vw;
-//       line-height: 0.99vw;
-//     }
-
-//     &__subtitle {
-//       display: flex;
-//       column-gap: 10px;
-//       justify-content: center;
-//       font-size: 24px;
-//     }
-//   }
-// }
-
 </style>

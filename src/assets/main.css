@@ -35,8 +35,11 @@ h6 {
   color: #fff;
 }
 
-p {
+p,
+span,
+button {
   color: #fff;
+  font-family: "MegaRegular";
 }
 
 .footer {

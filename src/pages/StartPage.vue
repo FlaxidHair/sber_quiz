@@ -2,10 +2,10 @@
   <div class="main">
     <div class="main-text">
       <h1 class="main-text__title">мегамаркет</h1>
-      <p class="main-text__subtitle">
+      <h2 class="main-text__subtitle">
         Какие кроссовки <br />
         тебе подходят?
-      </p>
+      </h2>
     </div>
 
     <div class="main-sneackers">
