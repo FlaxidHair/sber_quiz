@@ -37,7 +37,6 @@
       </div>
     </div>
   </div>
-  <FinalPage></FinalPage>
 </template>
 
 <script setup>
@@ -45,7 +44,6 @@ import Questions from '../api/Questions.json'
 import { ref } from 'vue'
 import { useStore } from '@/stores/store'
 import router from '@/router/router'
-import FinalPage from '@/pages/FinalPage.vue'
 
 const store = useStore()
 
@@ -59,6 +57,7 @@ function nextQuestion() {
   currentQuestionIndex.value++
   if (currentQuestionIndex.value >= 10) {
     router.push('/Final')
+    localStorage.setItem('sneacker', JSON.stringify(...store.answers))
   }
 }
 
