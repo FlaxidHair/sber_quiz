@@ -7,12 +7,13 @@
     </div>
     <footer class="footer">
       <p class="footer__title">Подготовлено совместно с брендом</p>
-      <p class="footer__subtitle"><img src="/konda.svg" alt="Konda" />Konda</p>
+      <h2 class="footer__subtitle"><img src="/konda.svg" alt="Konda" />Konda</h2>
     </footer>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
+@import './assets/block/footer.scss';
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -21,53 +22,27 @@
   .container {
     flex: 1;
   }
-
-  .footer {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    padding-bottom: 30px;
-
-    &__title {
-      font-size: 16px;
-      line-height: 19.2px;
-    }
-
-    &__subtitle {
-      display: flex;
-      column-gap: 10px;
-      justify-content: center;
-      font-size: 24px;
-    }
-  }
 }
 
-@media (max-width: 3840px) {
-  .footer {
-    &__title {
-      font-size: 305px;
-      line-height: 19.2px;
-    }
+//   .footer {
+//     text-align: center;
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 15px;
+//     padding-bottom: 30px;
 
-    &__subtitle {
-      display: flex;
-      column-gap: 10px;
-      justify-content: center;
-      font-size: 45px;
-    }
-  }
-}
+//     &__title {
+//       font-size: 0.83vw;
+//       line-height: 0.99vw;
+//     }
 
-@media (max-width: 2560px) {
-}
+//     &__subtitle {
+//       display: flex;
+//       column-gap: 10px;
+//       justify-content: center;
+//       font-size: 24px;
+//     }
+//   }
+// }
 
-@media (max-width: 1600px) {
-}
-
-@media (max-width: 744px) {
-}
-
-@media (max-width: 365px) {
-}
 </style>

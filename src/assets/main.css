@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MegaRegular";
+  src: url("./fonts/SansRegular.otf") format("otf"), url("./fonts/SansRegular.woff") format("woff"), url("./fonts/SansRegular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "MegaBold";
+  src: url("./fonts/SansBold.otf") format("otf"), url("./fonts/SansBold.woff") format("woff"), url("./fonts/SansBold.woff2") format("woff2");
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +21,97 @@
 
 body {
   background-color: #8654cc;
+  font-family: "MegaRegular";
 }
 
 h1,
-p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MegaBold";
+  font-size: 64px;
   color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  font-size: 0.83vw;
+  line-height: 0.99vw;
+}
+.footer__subtitle {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: center;
+  font-size: 24px;
+}
+
+@media (max-width: 3840px) {
+  .footer {
+    row-gap: 32px;
+    margin-bottom: 60px;
+  }
+  .footer__title {
+    font-size: 0.73vw;
+    line-height: 33.6px;
+  }
+  .footer__subtitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 2560px) {
+  .footer {
+    row-gap: 20px;
+    margin-bottom: 50px;
+  }
+  .footer__title {
+    font-size: 0.78vw;
+    line-height: 24px;
+  }
+  .footer__subtitle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1920px) {
+  .footer {
+    row-gap: 10px;
+    margin-bottom: 30px;
+  }
+  .footer__title {
+    font-size: 0.63vw;
+    line-height: 19.2px;
+  }
+  .footer__subtitle {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1600px) {
+  .footer {
+    margin-bottom: 32px;
+  }
+  .footer__title {
+    line-height: 16.8px;
+  }
+  .footer__subtitle {
+    font-size: 26px;
+  }
+}
+@media (max-width: 744px) {
+  .footer {
+    margin-bottom: 72px;
+  }
+  .footer__title {
+    font-size: 3vw;
+    line-height: 16.8px;
+  }
 }/*# sourceMappingURL=main.css.map */

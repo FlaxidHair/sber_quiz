@@ -1,4 +1,5 @@
 @import '../utils/variables.scss';
+@import '../utils/fonts';
 
 * {
   margin: 0;
@@ -8,11 +9,19 @@
 
 body {
   background-color: #8654cc;
+  font-family: 'MegaRegular';
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'MegaBold';
+  font-size: 64px;
+  color: $white;
+}
 p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
-    Verdana, sans-serif;
   color: $white;
 }

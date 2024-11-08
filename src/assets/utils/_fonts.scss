@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'MegaRegular';
+  src:
+    url('./fonts/SansRegular.otf') format('otf'),
+    url('./fonts/SansRegular.woff') format('woff'),
+    url('./fonts/SansRegular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MegaBold';
+  src:
+    url('./fonts/SansBold.otf') format('otf'),
+    url('./fonts/SansBold.woff') format('woff'),
+    url('./fonts/SansBold.woff2') format('woff2');
+}
