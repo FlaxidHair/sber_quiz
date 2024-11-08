@@ -51,7 +51,6 @@ const cardImage = ref('')
 
 function restart() {
   store.answers = []
-  
   router.push('/')
 }
 

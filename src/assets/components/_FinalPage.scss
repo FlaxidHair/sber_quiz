@@ -53,14 +53,28 @@
   .retry {
     background-color: $secondary-color-opacity;
     color: $secondary-color;
+    transition: 0.5s all;
+  }
+  .retry:hover {
+    background-color: $white;
+    color: $button-text-color;
   }
   .promo {
     background-color: $button-color;
     color: $button-text-color;
+    transition: 0.5s all;
+  }
+
+  .promo:hover {
+    background-color: $white;
   }
   .site {
     background-color: #ffe3c7;
     color: $button-text-color;
+    transition: 0.5s all;
+  }
+  .site:hover {
+    background-color: $white;
   }
 }
 
