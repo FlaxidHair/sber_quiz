@@ -30,18 +30,22 @@
     <p class="final__annotation">Кроссовки Konda представлены эксклюзивно на Мегамаркете</p>
     <div class="final__button-groups">
       <button class="retry" @click="restart">Пройти тест заново</button>
-      <button class="promo">Получить промокод</button>
+      <button class="promo" @click="store.isModalWindow = true">Получить промокод</button>
       <a href="https://megamarket.ru/" target="_blank"
         ><button class="site">Перейти на сайт</button></a
       >
     </div>
   </div>
+  <Transition>
+    <ModalWindow v-if="store.isModalWindow" />
+  </Transition>
 </template>
 
 <script setup>
 import { useStore } from '@/stores/store'
 import { ref, onMounted } from 'vue'
 import router from '@/router/router'
+import ModalWindow from '@/components/ModalWindow.vue'
 
 const store = useStore()
 

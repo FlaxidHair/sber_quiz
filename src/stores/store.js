@@ -3,10 +3,10 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useStore = defineStore('store', () => {
+  const isModalWindow = ref(false)
 
-  
   const answers = ref([])
-  
+
   function showSneackers() {
     const finalAnswers = [0, 0, 0]
     answers.value.forEach((el) => {
@@ -22,5 +22,5 @@ export const useStore = defineStore('store', () => {
     answers.value = indices
   }
 
-  return {answers, showSneackers}
+  return { answers, showSneackers, isModalWindow }
 })
