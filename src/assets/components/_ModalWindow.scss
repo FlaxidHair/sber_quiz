@@ -50,14 +50,12 @@
       }
 
       &-promo {
-        width: 100%;
         margin-bottom: 15px;
         position: relative;
-        z-index: 20;
         .promocode {
           display: flex;
           justify-content: center;
-          width: 100%;
+          align-items: center;
           color: $promocode;
           cursor: pointer;
           font-size: 82px;
@@ -98,6 +96,256 @@
       display: flex;
       justify-content: center;
       border-radius: 10px 10px 0px 0px;
+    }
+  }
+}
+
+@media (max-width: 3840px) {
+  .wrapper {
+    .card {
+      width: 1200px;
+      height: 700px;
+      border-radius: 20px;
+      padding: 60px 0;
+      .exit {
+        width: 38px;
+        height: 38px;
+        right: 25px;
+        top: 25px;
+      }
+
+      &__text {
+        &-title {
+          font-size: 42px;
+          line-height: 58.8px;
+          margin-bottom: 24px;
+        }
+
+        &-promo {
+          margin-bottom: 15px;
+          .promocode {
+            font-size: 82px;
+            line-height: 114.8px;
+            width: 1200px;
+          }
+        }
+        &-annotation {
+          font-size: 36px;
+          line-height: 50.4px;
+        }
+      }
+      &__rules-btn {
+        width: 860px;
+        height: 100px;
+        font-size: 32px;
+        line-height: 44.8px;
+        border-radius: 77px;
+      }
+
+      .alert {
+        width: 25%;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 2560px) {
+  .wrapper {
+    .card {
+      width: 800px;
+      height: 525px;
+      padding: 60px 0;
+      .exit {
+        width: 25px;
+        height: 25px;
+        right: 20px;
+        top: 20px;
+      }
+
+      &__text {
+        &-title {
+          font-size: 32px;
+          line-height: 44.8px;
+          margin-bottom: 24px;
+        }
+
+        &-promo {
+          margin-bottom: 15px;
+          .promocode {
+            font-size: 56px;
+            line-height: 78.4px;
+            width: 800px;
+          }
+        }
+        &-annotation {
+          font-size: 24px;
+          line-height: 33.6px;
+        }
+      }
+      &__rules-btn {
+        width: 636px;
+        height: 77px;
+        font-size: 32px;
+        line-height: 44.8px;
+        border-radius: 77px;
+      }
+
+      .alert {
+        font-size: 12px;
+        width: 25%;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .wrapper {
+    .card {
+      width: 760px;
+      height: 496px;
+      padding: 60px 0;
+      .exit {
+        width: 25px;
+        height: 25px;
+        right: 20px;
+        top: 20px;
+      }
+
+      &__text {
+        &-title {
+          font-size: 32px;
+          line-height: 44.8px;
+          margin-bottom: 24px;
+        }
+
+        &-promo {
+          margin-bottom: 15px;
+          .promocode {
+            font-size: 48px;
+            line-height: 67.2px;
+            width: 760px;
+          }
+        }
+        &-annotation {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+      &__rules-btn {
+        width: 636px;
+        height: 77px;
+        font-size: 32px;
+        line-height: 44.8px;
+        border-radius: 77px;
+      }
+
+      .alert {
+        font-size: 12px;
+        width: 25%;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .wrapper {
+    .card {
+      width: 558px;
+      height: 404px;
+      padding: 50px 0;
+      .exit {
+        width: 25px;
+        height: 25px;
+        right: 20px;
+        top: 20px;
+      }
+
+      &__text {
+        &-title {
+          font-size: 24px;
+          line-height: 33.6px;
+          margin-bottom: 24px;
+        }
+
+        &-promo {
+          margin-bottom: 15px;
+          .promocode {
+            font-size: 40px;
+            line-height: 56px;
+            width: 558px;
+          }
+        }
+        &-annotation {
+          font-size: 18px;
+          line-height: 25.2px;
+        }
+      }
+      &__rules-btn {
+        width: 510px;
+        height: 64px;
+        font-size: 20px;
+        line-height: 28px;
+        border-radius: 77px;
+      }
+
+      .alert {
+        font-size: 8px;
+        width: 25%;
+        padding: 10px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 744px) {
+  .wrapper {
+    .card {
+      width: 343px;
+      height: 349px;
+      padding: 40px 0;
+      .exit {
+        width: 25px;
+        height: 25px;
+        right: 20px;
+        top: 20px;
+      }
+
+      &__text {
+        &-title {
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 20px;
+        }
+
+        &-promo {
+          margin-bottom: 10px;
+          .promocode {
+            font-size: 32px;
+            line-height: 44.8px;
+            width: 343px;
+          }
+        }
+        &-annotation {
+          font-size: 16px;
+          line-height: 22.4px;
+        }
+      }
+      &__rules-btn {
+        width: 302px;
+        height: 56px;
+        font-size: 14px;
+        line-height: 19.6px;
+        border-radius: 77px;
+      }
+
+      .alert {
+        font-size: 8px;
+        width: 40%;
+        padding: 10px 10px;
+      }
     }
   }
 }

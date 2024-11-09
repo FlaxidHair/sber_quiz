@@ -17,7 +17,9 @@
           при заказе от <span class="rub">6000</span> рублей
         </p>
       </div>
-      <button class="card__rules-btn">Правила применения промокода</button>
+      <a href="https://megamarket.ru/" target="_blank"
+        ><button class="card__rules-btn">Правила применения промокода</button></a
+      >
       <Transition>
         <span class="alert" v-if="copiedText">Промокод скопирован</span>
       </Transition>
